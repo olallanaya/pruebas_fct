@@ -1,0 +1,83 @@
+<HTML>
+
+<HEAD>
+    <TITLE>AHORCADO</TITLE>
+
+
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="ahorcado_jq.js">
+    </script>
+
+</HEAD>
+
+<BODY>
+    <H2>Juego del ahorcado</H2>
+    <FORM NAME=visor id=formulario>
+        <CENTER>
+            <TABLE width=547>
+                <tr>
+                    <TD colspan=6 width=300 ALIGN=center>
+                        <INPUT NAME=jugador SIZE=42>
+                    </TD>
+                </tr>
+                <TR>
+                    <TD colspan=3 width=150 ALIGN=center><textarea name=displayHombre cols=15 rows=6></textarea>
+                        <TD colspan=3 WIDTH=150 ALIGN=center><textarea name=displayLetras cols=15 rows=6></textarea>
+                            <TD width=200>
+                                <TR>
+                                    <TD colspan=6 width=300 ALIGN=center>
+                                        <INPUT NAME=displayPalabra SIZE=42> <br>
+
+                                        <TD ALIGN=center>&nbsp;
+                                            <TR>
+                                                <td align=center width=50><input type=button name=botA value=" A " class="boton" onClick="Jugar( 'a')">
+                                                    <td align=center width=50><input type=button name=botB value=" B "  class="boton" onClick="Jugar( 'b')">
+                                                        <td align=center width=50><input type=button name=botC value=" C " class="boton" onClick="Jugar( 'c')">
+                                                            <td align=center width=50><input type=button name=botD value=" D " class="boton" onClick="Jugar( 'd')">
+                                                                <td align=center width=50><input type=button name=botE value=" E " class="boton" onClick="Jugar( 'e')">
+                                                                    <td align=center width=50><input type=button name=botF value=" F " class="boton" onClick="Jugar( 'f')">
+                                                                        <td>
+                                                                            <tr>
+                                                                                <td align=center><input type=button name=botG value=" G " class="boton" onClick="Jugar( 'g')">
+                                                                                    <td align=center><input type=button name=botH value=" H " class="boton" onClick="Jugar( 'h')">
+                                                                                        <td align=center><input type=button name=botI value=" I " class="boton" onClick="Jugar( 'i')">
+                                                                                            <td align=center><input type=button name=botJ value=" J " class="boton" onClick="Jugar( 'j')">
+                                                                                                <td align=center><input type=button name=botK value=" K " class="boton" onClick="Jugar( 'k')">
+                                                                                                    <td align=center><input type=button name=botL value=" L " class="boton" onClick="Jugar( 'l')">
+                                                                                                        <td align=right valign=middle>Ganadas: <input type=text name=ganadas size=4 value=0>
+                                                                                                            <tr>
+                                                                                                                <td align=center><input type=button name=botM value=" M " class="boton" onClick="Jugar( 'm')">
+                                                                                                                    <td align=center><input type=button name=botN value=" N " class="boton" onClick="Jugar( 'n')">
+                                                                                                                        <td align=center><input type=button name=botÑ value=" Ñ " class="boton" onClick="Jugar( 'ñ')">
+                                                                                                                            <td align=center><input type=button name=botO value=" O " class="boton" onClick="Jugar( 'o')">
+                                                                                                                                <td align=center><input type=button name=botP value=" P " class="boton" onClick="Jugar( 'p')">
+                                                                                                                                    <td align=center><input type=button name=botQ value=" Q " class="boton" onClick="Jugar( 'q')">
+                                                                                                                                        <td align=right valign=middle>Perdidas: <input type=text name=perdidas size=4 value=0>
+                                                                                                                                            <tr>
+                                                                                                                                                <td align=center><input type=button name=botR value=" R " class="boton" onClick="Jugar( 'r')">
+                                                                                                                                                    <td align=center><input type=button name=botS value=" S " class="boton" onClick="Jugar( 's')">
+                                                                                                                                                        <td align=center><input type=button name=botT value=" T " class="boton" onClick="Jugar( 't')">
+                                                                                                                                                            <td align=center><input type=button name=botU value=" U " class="boton" onClick="Jugar( 'u')">
+                                                                                                                                                                <td align=center><input type=button name=botV value=" V " class="boton" onClick="Jugar( 'v')">
+                                                                                                                                                                    <td align=center><input type=button name=botW value=" W " class="boton" onClick="Jugar( 'w')">
+                                                                                                                                                                        <td>
+                                                                                                                                                                            <tr>
+                                                                                                                                                                                <td align=center><input type=button name=botX value=" X " class="boton" onClick="Jugar( 'x')">
+                                                                                                                                                                                    <td align=center><input type=button name=botY value=" Y " class="boton" onClick="Jugar( 'y')">
+                                                                                                                                                                                        <td align=center><input type=button name=botZ value=" Z " class="boton" onClick="Jugar( 'z')">
+                                                                                                                                                                                            <td colspan=3 align=center><input type=button name=Inicia value="  Juego nuev" onClick="Iniciar()">
+                                                                                                                                                                                                <td align=center><input type=button value=Limpiar name=B1 onClick="this.form.ganadas.value='0'; this.form.perdidas.value='0'">
+            </TABLE>
+        </CENTER>
+    </FORM>
+
+    <hr>
+    <center>
+        <h3>
+            [<a href="javascr.htm">Volver</a>]
+        </h3>
+    </center>
+</BODY>
+
+</HTML>
